@@ -19,5 +19,6 @@ Package.onTest(function(api) {
 
 function configurePackage(api) {
   api.versionsFrom('METEOR@1.0');
+  api.use(['mongo'], ['server']);
   api.addFiles(['index.js'], ['server']);
 }
